@@ -1,0 +1,66 @@
+body{
+    background: #171717;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 26px;
+    color: #ffffff;
+}
+
+.sidebar {
+    width: 270px;
+    padding: 35px;
+    border-right: 1px solid #ffffff;
+    height: 1080px;
+}
+
+.sidebar img{
+    margin-bottom: 213.5px;
+}
+.sidebar__progress {
+    margin-bottom: 247px;
+    
+}
+
+.sidebar__progress--text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 52px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.sidebar__progress--text::after{
+    content: "";
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background: #444444;
+    border-radius: 50px;
+}
+
+.sidebar__progress--text.active::after{
+    background: #DA0037;
+}
+
+.sidebar__contacts{
+    margin-left: -10px;
+    width: 220px;
+    border-top: 1px solid #fff;
+    padding-top: 38px;
+}
+
+.sidebar__contacts a{
+    font-size: 18px;
+}
+
+.sidebar__contacts--link {
+    display: flex;
+    align-items: center;
+    margin: 0 0 30px 9px;
+}
+
+.sidebar__contacts--link svg{
+    display: block;
+    margin-right: 20px;
+}
