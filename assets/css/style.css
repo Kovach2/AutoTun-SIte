@@ -1,4 +1,4 @@
-body{
+body {
     background: #171717;
     font-family: 'Poppins';
     font-weight: 400;
@@ -6,19 +6,28 @@ body{
     color: #ffffff;
 }
 
-.sidebar {
-    width: 270px;
-    padding: 35px;
-    border-right: 1px solid #ffffff;
-    height: 1080px;
+.container {
+    padding-left: 326px;
 }
 
-.sidebar img{
+/* SideBar */
+
+.sidebar {
+    position: fixed;
+    width: 270px;
+    padding: 35px;
+    border-right: 1px solid #242424;
+    height: 100%;
+    max-height: 1080px;
+}
+
+.sidebar img {
     margin-bottom: 213.5px;
 }
+
 .sidebar__progress {
     margin-bottom: 247px;
-    
+
 }
 
 .sidebar__progress--text {
@@ -30,7 +39,7 @@ body{
     font-weight: 500;
 }
 
-.sidebar__progress--text::after{
+.sidebar__progress--text::after {
     content: "";
     display: inline-block;
     width: 17px;
@@ -39,18 +48,18 @@ body{
     border-radius: 50px;
 }
 
-.sidebar__progress--text.active::after{
+.sidebar__progress--text.active::after {
     background: #DA0037;
 }
 
-.sidebar__contacts{
+.sidebar__contacts {
     margin-left: -10px;
     width: 220px;
     border-top: 1px solid #fff;
     padding-top: 38px;
 }
 
-.sidebar__contacts a{
+.sidebar__contacts a {
     font-size: 18px;
 }
 
@@ -60,7 +69,118 @@ body{
     margin: 0 0 30px 9px;
 }
 
-.sidebar__contacts--link svg{
+.sidebar__contacts--link svg {
     display: block;
     margin-right: 20px;
+}
+
+/* Intro */
+
+.intro {
+    height: 100vh;
+    max-height: 1080px;
+    position: relative;
+    padding-top: 72px;
+}
+
+.intro__car{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+}
+
+.intro__car img{
+    position: absolute;
+    top: 190px;
+    right: 56px;
+    /* margin-top: 190px;
+    margin-right: 56px; */
+}
+
+.intro_rect--bg{
+    position: absolute;
+    background: linear-gradient(180.02deg, rgba(23, 23, 23, 0) 0.02%, rgba(23, 23, 23, 0.98) 99.98%);
+    right: 0;
+    z-index: 0;
+    height: 100%;
+    width: 825px;
+}
+
+.intro_rect{
+    position: absolute;
+    right: 252px;
+    background: #DA0037;
+    width: 322px;
+    height: 1080px;
+    transform: skew(155deg);
+}
+
+.intro__title {
+    font-weight: 600;
+    font-size: 71px;
+}
+
+.intro__subtitle {
+    width: 100%;
+    max-width: 773px;
+    margin: 32px 0 84px 0;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 37px;
+}
+
+.intro__contacts svg {
+    margin-right: 26px;
+}
+
+.intro__contacts--address {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+}
+
+
+.intro__contacts--phones {
+    display: flex;
+    margin: 41px 0 121px 0;
+}
+
+.intro__contacts--numbers {}
+
+.intro__contacts--numbers span {
+    display: block;
+    margin-bottom: 17px;
+    font-size: 23px;
+}
+
+.intro__stats {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1538px;
+    padding: 76px 75px 73px 73px;
+    background: #282828;
+    border-radius: 2px;
+}
+
+.intro__stats--item{
+    margin-top: 10px;
+}
+
+.intro__stats--title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 40px;
+    letter-spacing: 1px;
+    margin-bottom: 38px;
+}
+
+.intro__stats--nums {
+    margin-left: -27px;
+    font-weight: 400;
+    font-size: 50px;
+    text-align: center;
+    color: #EE204D;
 }
