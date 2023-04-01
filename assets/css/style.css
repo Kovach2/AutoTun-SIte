@@ -7,7 +7,14 @@ body {
 }
 
 .container {
-    padding-left: 326px;
+    width: 100%;
+    max-width: 1595px;
+    margin-left: auto;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 40px;
 }
 
 /* SideBar */
@@ -95,8 +102,6 @@ body {
     position: absolute;
     top: 190px;
     right: 56px;
-    /* margin-top: 190px;
-    margin-right: 56px; */
 }
 
 .intro_rect--bg {
@@ -181,10 +186,6 @@ body {
     font-size: 50px;
     text-align: center;
     color: #EE204D;
-}
-
-.products {
-    height: 1080px;
 }
 
 .products__title {
@@ -297,7 +298,7 @@ body {
     max-width: 400px;
     display: flex;
     gap: 28px;
-    margin: 0 auto;
+    margin: 0 auto 37px auto;
 }
 
 .slider__button {
@@ -322,6 +323,90 @@ body {
     font-size: 26px;
 }
 
-.slider__button.next img{
+.slider__button.next img {
     display: inline-block;
+}
+
+/* Services */
+.title.serv {
+    font-weight: 400;
+    margin-top: 108px;
+}
+
+.services__items {
+    margin-top: 93px;
+}
+
+.services__item {
+    position: relative;
+    display: flex;
+    z-index: 1;
+    gap: 40px;
+    margin-bottom: 86px;
+}
+
+.services__item::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -26px;
+    left: -43px;
+    z-index: -1;
+    width: 1302px;
+    height: 200px;
+    background: #282828;
+    transform: skew(158deg);
+}
+
+.services__item.painting {
+    margin-left: 242px;
+}
+
+.services__item.tinting {
+    margin-left: 162px;
+}
+
+.services__item.modernization {
+    margin-left: 84px;
+}
+
+.services__item--img {}
+
+.services__item--desc {}
+
+.services__item--title {
+    font-weight: 600;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #EE204D;
+}
+
+.services__item--text {
+    width: 100%;
+    max-width: 1010px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 15px;
+}
+
+.services__button {
+    border: 2px solid #EE204D;
+    border-radius: 2px;
+    width: 460px;
+    height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 26px;
+    text-transform: uppercase;
+    margin: 0 0 47px 539px;
+}
+
+.services__descr {
+    text-align: center;
+    margin: 92px 61px 31px 0;
+    font-size: 20px;
+    line-height: 30px;
 }
