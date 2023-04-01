@@ -370,10 +370,6 @@ body {
     margin-left: 84px;
 }
 
-.services__item--img {}
-
-.services__item--desc {}
-
 .services__item--title {
     font-weight: 600;
     font-size: 40px;
@@ -397,16 +393,110 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
     font-weight: 600;
     font-size: 26px;
     text-transform: uppercase;
     margin: 0 0 47px 539px;
 }
 
-.services__descr {
+.services__decs {
     text-align: center;
     margin: 92px 61px 31px 0;
     font-size: 20px;
     line-height: 30px;
+}
+
+/* Gallery */
+
+.gallery {}
+
+.title.gallery {
+    margin-top: 132px;
+}
+
+.gallery__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 143px 0 67px;
+    margin: 67px 0 251px 0;
+}
+
+.gallery__item {
+    margin-bottom: 32px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    text-align: center;
+    width: 100%;
+    max-width: 440px;
+    height: 293px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 43.69%, #000000 96.66%);
+}
+
+.gallery__item:hover {
+    background: rgba(0, 0, 0, 0.8);
+    transition: .0s all ease;
+}
+
+.gallery__item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.gallery__item--title {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.gallery__item:hover .gallery__item--title {
+    margin-bottom: 173px;
+    transition: .4s margin ease;
+}
+
+.gallery__item--decsr {
+    font-weight: 300;
+    font-size: 12px;
+    margin: 7px 0 11px 
+}
+
+.gallery__item:hover .gallery__item--decsr {
+    display: none;
+}
+
+.gallery__item__list {
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 54%;
+    transform: translateX(-50%);
+    width: 316px;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.gallery__item:hover .gallery__item__list {
+    top: 127px;
+    opacity: 1;
+    transition: 1s opacity ease;
+}
+
+.gallery__item__list--item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.gallery__item__list--item::before {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background: #ffffff;
+    border-radius: 10px;
+    margin-right: 7px;
 }
