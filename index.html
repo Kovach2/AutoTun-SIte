@@ -7,13 +7,18 @@
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/fonts.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css"/>
+    <script src="assets/slick/slick.min.js"></script>
+    
     <title>Document</title>
 </head>
 <body>
     <div class="sidebar">
         <img src="assets/img/logo.png" alt="">
         <div class="sidebar__progress">
-            <div class="sidebar__progress--text active">Home</div>
+            <div class="sidebar__progress--text">Home</div>
             <div class="sidebar__progress--text">Products</div>
             <div class="sidebar__progress--text">Our Services</div>
             <div class="sidebar__progress--text">Gallery</div>
@@ -88,113 +93,245 @@
                 <div class="products__title--text">Our Products</div>
                 <a href="#" class="products__title--link">See all</a>
             </div>
-            <div class="products__cards">
-                <div class="products__card">
-                    <div class="products__card--img">
-                        <img src="assets/img/card1.png" alt="image">
-                    </div>
-                    <div class="products__card--text">
-                        <div class="products__card--title">Car Deatail m5 e60 (2004 - 2010)</div>
-                        <div class="products__card__price">
-                            <div class="products__card__price--text">8,99$</div>
-                            <a href="#" class="products__card__price--link">show</a>
+            <div class="slider">
+                <div class="products__cards">
+                    <div class="products__card">
+                        <div class="products__card--img">
+                            <img src="assets/img/card1.png" alt="image">
                         </div>
-                    </div>
-                </div>
-                <div class="products__card">
-                    <div class="products__card--img">
-                        <img src="assets/img/card2.png" alt="image">
-                    </div>
-                    <div class="products__card--text">
-                        <div class="products__card--title">Car Deatail CLS w222 
-                            (2010 - 2018)</div>
-                        <div class="products__card__price">
-                            <div class="products__card__price--text sale">
-                                7.99$
+                        <div class="products__card--text">
+                            <div class="products__card--title">Car Deatail m5 e60 (2004 - 2010)</div>
+                            <div class="products__card__price">
+                                <div class="products__card__price--text">8,99$</div>
+                                <a href="#" class="products__card__price--link">show</a>
                             </div>
-                            <a href="#" class="products__card__price--link">show</a>
                         </div>
                     </div>
-                </div>
-                <div class="products__card">
-                    <div class="products__card--img">
-                        <img src="assets/img/card3.png" alt="image">
-                    </div>
-                    <div class="products__card--text">
-                        <div class="products__card--title">Car Deatail S classe  
-                            (2008 - 2020)</div>
-                        <div class="products__card__price">
-                            <div class="products__card__price--text">12,99$</div>
-                            <a href="#" class="products__card__price--link">show</a>
+                    <div class="products__card">
+                        <div class="products__card--img">
+                            <img src="assets/img/card1.png" alt="image">
+                        </div>
+                        <div class="products__card--text">
+                            <div class="products__card--title">Car Deatail m5 e60 (2004 - 2010)</div>
+                            <div class="products__card__price">
+                                <div class="products__card__price--text">8,99$</div>
+                                <a href="#" class="products__card__price--link">show</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="products__card">
-                    <div class="products__card--img">
-                        <img src="assets/img/card1.png" alt="image">
-                    </div>
-                    <div class="products__card--text">
-                        <div class="products__card--title">Car Deatail db40 </br>
-                            (2004 - 2010)</div>
-                        <div class="products__card__price">
-                            <div class="products__card__price--text">22,99$</div>
-                            <a href="#" class="products__card__price--link">show</a>
+                    <div class="products__card">
+                        <div class="products__card--img">
+                            <img src="assets/img/card2.png" alt="image">
+                        </div>
+                        <div class="products__card--text">
+                            <div class="products__card--title">Car Deatail CLS w222 
+                                (2010 - 2018)</div>
+                            <div class="products__card__price">
+                                <div class="products__card__price--text sale">
+                                    7.99$
+                                </div>
+                                <a href="#" class="products__card__price--link">show</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="products__card">
-                    <div class="products__card--img">
-                        <img src="assets/img/card3.png" alt="image">
-                    </div>
-                    <div class="products__card--text">
-                        <div class="products__card--title">Car Deatail S classe  
-                            (2008 - 2020)</div>
-                        <div class="products__card__price">
-                            <div class="products__card__price--text">12,99$</div>
-                            <a href="#" class="products__card__price--link">show</a>
+                    <div class="products__card">
+                        <div class="products__card--img">
+                            <img src="assets/img/card3.png" alt="image">
+                        </div>
+                        <div class="products__card--text">
+                            <div class="products__card--title">Car Deatail S classe  
+                                (2008 - 2020)</div>
+                            <div class="products__card__price">
+                                <div class="products__card__price--text">12,99$</div>
+                                <a href="#" class="products__card__price--link">show</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="products__card">
-                    <div class="products__card--img">
-                        <img src="assets/img/card1.png" alt="image">
-                    </div>
-                    <div class="products__card--text">
-                        <div class="products__card--title">Car Deatail db40 </br>
-                            (2004 - 2010)</div>
-                        <div class="products__card__price">
-                            <div class="products__card__price--text">22,99$</div>
-                            <a href="#" class="products__card__price--link">show</a>
+                    <div class="products__card">
+                        <div class="products__card--img">
+                            <img src="assets/img/card1.png" alt="image">
+                        </div>
+                        <div class="products__card--text">
+                            <div class="products__card--title">Car Deatail db40 </br>
+                                (2004 - 2010)</div>
+                            <div class="products__card__price">
+                                <div class="products__card__price--text">22,99$</div>
+                                <a href="#" class="products__card__price--link">show</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="products__card">
-                    <div class="products__card--img">
-                        <img src="assets/img/card3.png" alt="image">
-                    </div>
-                    <div class="products__card--text">
-                        <div class="products__card--title">Car Deatail S classe  
-                            (2008 - 2020)</div>
-                        <div class="products__card__price">
-                            <div class="products__card__price--text">12,99$</div>
-                            <a href="#" class="products__card__price--link">show</a>
+                    <div class="products__card">
+                        <div class="products__card--img">
+                            <img src="assets/img/card3.png" alt="image">
+                        </div>
+                        <div class="products__card--text">
+                            <div class="products__card--title">Car Deatail S classe  
+                                (2008 - 2020)</div>
+                            <div class="products__card__price">
+                                <div class="products__card__price--text">12,99$</div>
+                                <a href="#" class="products__card__price--link">show</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="products__card">
-                    <div class="products__card--img">
-                        <img src="assets/img/card1.png" alt="image">
+                    <div class="products__card">
+                        <div class="products__card--img">
+                            <img src="assets/img/card1.png" alt="image">
+                        </div>
+                        <div class="products__card--text">
+                            <div class="products__card--title">Car Deatail db40 </br>
+                                (2004 - 2010)</div>
+                            <div class="products__card__price">
+                                <div class="products__card__price--text">22,99$</div>
+                                <a href="#" class="products__card__price--link">show</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="products__card--text">
-                        <div class="products__card--title">Car Deatail db40 </br>
-                            (2004 - 2010)</div>
-                        <div class="products__card__price">
-                            <div class="products__card__price--text">22,99$</div>
-                            <a href="#" class="products__card__price--link">show</a>
+                    <div class="products__card">
+                        <div class="products__card--img">
+                            <img src="assets/img/card3.png" alt="image">
+                        </div>
+                        <div class="products__card--text">
+                            <div class="products__card--title">Car Deatail S classe  
+                                (2008 - 2020)</div>
+                            <div class="products__card__price">
+                                <div class="products__card__price--text">12,99$</div>
+                                <a href="#" class="products__card__price--link">show</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products__card">
+                        <div class="products__card--img">
+                            <img src="assets/img/card1.png" alt="image">
+                        </div>
+                        <div class="products__card--text">
+                            <div class="products__card--title">Car Deatail db40 </br>
+                                (2004 - 2010)</div>
+                            <div class="products__card__price">
+                                <div class="products__card__price--text">22,99$</div>
+                                <a href="#" class="products__card__price--link">show</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products__card">
+                        <div class="products__card--img">
+                            <img src="assets/img/card1.png" alt="image">
+                        </div>
+                        <div class="products__card--text">
+                            <div class="products__card--title">Car Deatail m5 e60 (2004 - 2010)</div>
+                            <div class="products__card__price">
+                                <div class="products__card__price--text">8,99$</div>
+                                <a href="#" class="products__card__price--link">show</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products__card">
+                        <div class="products__card--img">
+                            <img src="assets/img/card1.png" alt="image">
+                        </div>
+                        <div class="products__card--text">
+                            <div class="products__card--title">Car Deatail m5 e60 (2004 - 2010)</div>
+                            <div class="products__card__price">
+                                <div class="products__card__price--text">8,99$</div>
+                                <a href="#" class="products__card__price--link">show</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products__card">
+                        <div class="products__card--img">
+                            <img src="assets/img/card2.png" alt="image">
+                        </div>
+                        <div class="products__card--text">
+                            <div class="products__card--title">Car Deatail CLS w222 
+                                (2010 - 2018)</div>
+                            <div class="products__card__price">
+                                <div class="products__card__price--text sale">
+                                    7.99$
+                                </div>
+                                <a href="#" class="products__card__price--link">show</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products__card">
+                        <div class="products__card--img">
+                            <img src="assets/img/card3.png" alt="image">
+                        </div>
+                        <div class="products__card--text">
+                            <div class="products__card--title">Car Deatail S classe  
+                                (2008 - 2020)</div>
+                            <div class="products__card__price">
+                                <div class="products__card__price--text">12,99$</div>
+                                <a href="#" class="products__card__price--link">show</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products__card">
+                        <div class="products__card--img">
+                            <img src="assets/img/card1.png" alt="image">
+                        </div>
+                        <div class="products__card--text">
+                            <div class="products__card--title">Car Deatail db40 </br>
+                                (2004 - 2010)</div>
+                            <div class="products__card__price">
+                                <div class="products__card__price--text">22,99$</div>
+                                <a href="#" class="products__card__price--link">show</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products__card">
+                        <div class="products__card--img">
+                            <img src="assets/img/card3.png" alt="image">
+                        </div>
+                        <div class="products__card--text">
+                            <div class="products__card--title">Car Deatail S classe  
+                                (2008 - 2020)</div>
+                            <div class="products__card__price">
+                                <div class="products__card__price--text">12,99$</div>
+                                <a href="#" class="products__card__price--link">show</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products__card">
+                        <div class="products__card--img">
+                            <img src="assets/img/card1.png" alt="image">
+                        </div>
+                        <div class="products__card--text">
+                            <div class="products__card--title">Car Deatail db40 </br>
+                                (2004 - 2010)</div>
+                            <div class="products__card__price">
+                                <div class="products__card__price--text">22,99$</div>
+                                <a href="#" class="products__card__price--link">show</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products__card">
+                        <div class="products__card--img">
+                            <img src="assets/img/card3.png" alt="image">
+                        </div>
+                        <div class="products__card--text">
+                            <div class="products__card--title">Car Deatail S classe  
+                                (2008 - 2020)</div>
+                            <div class="products__card__price">
+                                <div class="products__card__price--text">12,99$</div>
+                                <a href="#" class="products__card__price--link">show</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products__card">
+                        <div class="products__card--img">
+                            <img src="assets/img/card1.png" alt="image">
+                        </div>
+                        <div class="products__card--text">
+                            <div class="products__card--title">Car Deatail db40 </br>
+                                (2004 - 2010)</div>
+                            <div class="products__card__price">
+                                <div class="products__card__price--text">22,99$</div>
+                                <a href="#" class="products__card__price--link">show</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            
             <div class="slider__buttons">
                 <div class="slider__button prev">
                     <img src="assets/img/prev.png" alt="arrow">
@@ -322,48 +459,75 @@
     </div>
     <div class="about">
         <div class="container">
-            <div class="title about">
+            <div class="title about_title">
                 About Us
             </div>
             <div class="list__menu">
-                <div class="list__menu__item">
-                    <div class="list__menu__item--title">
-                        <img src="assets/img/about1.png" alt="logo">
-                        <div class="list__menu__item--name">DELIVERY</div>
+                <div class="list__menu__item--container">
+                    <div class="list__menu__item">
+                        <div class="list__menu__item--title">
+                            <img src="assets/img/about1.png" alt="logo">
+                            <div class="list__menu__item--name">DELIVERY</div>
+                        </div>
+                        <img class="arrow" src="assets/img/down-arrow.png" alt="arrow">
                     </div>
-                    <img class="arrow" src="assets/img/down-arrow.png" alt="arrow">
-                </div>
-                <div class="list__menu__item">
-                    <div class="list__menu__item--title">
-                        <img src="assets/img/about2.png" alt="logo">
-                        <div class="list__menu__item--name">PAYMENT</div>
+                    <div class="list__menu__item--text">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                        <p>Magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus</p>
                     </div>
-                    <img class="arrow" src="assets/img/down-arrow.png" alt="arrow">
                 </div>
-                <div class="list__menu__item">
-                    <div class="list__menu__item--title">
-                        <img src="assets/img/about3.png" alt="logo">
-                        <div class="list__menu__item--name">Guarantee</div>
+                <div class="list__menu__item--container">
+                    <div class="list__menu__item">
+                        <div class="list__menu__item--title">
+                            <img src="assets/img/about2.png" alt="logo">
+                            <div class="list__menu__item--name">PAYMENT</div>
+                        </div>
+                        <img class="arrow" src="assets/img/down-arrow.png" alt="arrow">
                     </div>
-                    <img class="arrow" src="assets/img/down-arrow.png" alt="arrow">
-                </div>
-                <div class="list__menu__item active">
-                    <div class="list__menu__item--title">
-                        <img src="assets/img/about4.png" alt="logo">
-                        <div class="list__menu__item--name">ABOUT</div>
+                    <div class="list__menu__item--text">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                        <p>Magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus</p>
                     </div>
-                    <img class="arrow" src="assets/img/down-arrow.png" alt="arrow">
                 </div>
-                <div class="list__menu__item--text">
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                    <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                    <p>Magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus</p>
+                
+                <div class="list__menu__item--container">
+                    <div class="list__menu__item">
+                        <div class="list__menu__item--title">
+                            <img src="assets/img/about3.png" alt="logo">
+                            <div class="list__menu__item--name">Guarantee</div>
+                        </div>
+                        <img class="arrow" src="assets/img/down-arrow.png" alt="arrow">
+                    </div>
+                    <div class="list__menu__item--text">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                        <p>Magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus</p>
+                    </div>
+                </div>
+                
+                <div class="list__menu__item--container">
+                    <div class="list__menu__item">
+                        <div class="list__menu__item--title">
+                            <img src="assets/img/about4.png" alt="logo">
+                            <div class="list__menu__item--name">ABOUT</div>
+                        </div>
+                        <img class="arrow" src="assets/img/down-arrow.png" alt="arrow">
+                    </div>
+                    <div class="list__menu__item--text">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                        <p>Magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-
-
+   
+    
+    
+    <script src="assets/js/index.js"></script>
 </body>
 </html>
